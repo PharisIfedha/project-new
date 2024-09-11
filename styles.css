@@ -5,7 +5,20 @@
     box-sizing: border-box;
 }
 
-
+/* Optional: Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .hero-image img {
+        max-width: 200%;
+    }
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -137,20 +150,7 @@ header .auth a:hover {
 }
 
 
-/* Optional: Adjustments for smaller screens */
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-    .hero-content {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-    .hero-image img {
-        max-width: 100%;
-    }
-}
+
 
 /* Customer review*/
 .Customer{
