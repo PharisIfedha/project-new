@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pharitec Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles1.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -15,169 +15,172 @@
     <!-- Header Section -->
     <header>
   
-        <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="logo">
                 <img src="images/pharis.png" class="pharis">
                    <!--<h2 class="logo"> Pharitec</h2>-->
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Photobooks</a></li>
-                    <li><a href="#">Canvases</a></li>
-                    <li><a href="#">Photomounts</a></li>
-                    <li><a href="#">Receipt Books</a></li>
-                    <div class="auth">
-                        <a href="#" class="login">Log In</a>
-                        <a href="#" class="signup">Sign Up</a>
-                    </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav  ">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Photobooks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Canvases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Photomounts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Receipt Books</a>
+                    </li>
                 </ul>
-            </nav>
-        </div>
+        
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link login-link" href="#">Log In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link signup-link" href="#">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <div class="row">
-            <!-- Hero Section -->
-            <section class="hero">
-                <div class="container">
-                    <div class="hero-content">
-                        <h2>Keeping Memories Alive</h2>
-                        <p>We help you use your photos to tell the story they capture in an easy and fun way. We believe that memories captured today need to be retained, to be enjoyed, to be touched and felt. We believe everyone should #keepmemoriesalive! It is our job to give you exciting products to make this happen!</p>
-                    
-                        <!--Sign up-->
-                        <div class="search">
-                            <input class="srch" type="search" name="" placeholder="Enter email">
-                            <a href="#"><button class="btn1">Sign up</button></a>
-                        </div>
-                        
-
-                        <!--Book now and play video-->
-
-                        <div class="actions-container">
-                            <button class="btnn">Book Now</button>
-                            <!-- This is a play icon using the triangle (►) character -->
-                            <div class="play-video-container">        
-                                <div class="play-icon">&#9658;</div>
-                                <span>Play Video</span>
-                            </div>
-                        </div>
-
-                        
-                    </div>
-                    <div class="hero-image">
-                        <img src="images/p5.jpg" alt="ka">
-                    </div>
-                </div>
-            </section>
-
-        
-
-            <!-- Customer review-->
-            <div class="Customer">
-                <div class="stats-container">
-                    <div class="stats">
-                        <h2>95%</h2>
-                        <p>Satisfaction Rate</p>
-                    </div>
-                    <div class="stat">
-                        <h2>200</h2>
-                        <p>Employee </p>
-                    </div>
-                    <div class="stat">
-                        <h2>3,000+</h2>
-                        <p> Customers</p>
-                    </div>
-                    <div class="stat">
-                        <h2>100%</h2>
-                        <p>Service delivery</p>
-                        <p> </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- our best services-->
-
-            <div class="state">
-                <h2>Our Best <span>Services</span></h2>
-            </div>
-            <div class="container12">
+    <div class="container mt-5">
+        <div class="row align-items-center">
+            <!-- Left Section (Text + Buttons) -->
+            <div class="col-lg-6 col-md-6 col-sm-12 text-section">
+                <h2 class="text-danger font-weight-bold">Keeping Memories Alive</h2>
+                <p>We help you use your photos to tell the story they capture in an easy and fun way. We believe that memories captured today need to be retained, to be enjoyed, to be touched and felt. We believe everyone should #keepmemoriesalive! It is our job to give you exciting products to make this happen!</p>
                 
-                <div class="feature-box">
-                    <div class="icon"><img src="images/14.jpg" width="80%" alt="Photomount"></div>
-                    <h3>Photo Mounts</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="feature-box">
-                    <div class="icon"><img src="images/p5.jpg" width="130%" alt="Canvas"></div>
-                    <h3>Canvas Mounts</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="feature-box">
-                    <div class="icon"><img src="images/4.jpg" width="100%" alt="Mug"></div>
-                    <h3>Mug Branding</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="feature-box">
-                    <div class="icon"><img src="images/bottle.jpg" width="100%" alt="Bottle"></div>
-                    <h3>Bottle Branding</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <!-- Email input and Sign up button -->
+                <form class="form-inline mb-3">
+                    <input type="email" class="form-control email-input mr-2" placeholder="Enter email">
+                    <button type="submit" class="btn btn-danger">Sign up</button>
+                </form>
+                
+                <!-- Book Now and Play Video Buttons -->
+                <div class="button-group">
+                    <button class="btn btn-dark mr-2">Book Now</button>
+                    <div class="play-video-container">        
+                        <div class="play-icon">&#9658;</div>
+                        <span>Play Video</span>
+                    </div>
                 </div>
             </div>
+    
+            <!-- Right Section (Image) -->
+            <div class="col-lg-6 col-md-6 col-sm-12  image-section">
+                <div class="position-relative">
+                    <img src="images/canvas.jpg" alt="Canvas Front" class="img-fluid">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Customer review-->
+    <div class="container mt-5">
+        <div class="stats-box d-flex justify-content-between align-items-center">
+            <div class="stat-item text-center">
+                <h2>95%</h2>
+                <p>Satisfaction Rate</p>
+            </div>
+            <div class="divider"></div>
+            <div class="stat-item text-center">
+                <h2>200</h2>
+                <p>Employee</p>
+            </div>
+            <div class="divider"></div>
+            <div class="stat-item text-center">
+                <h2>3,000+</h2>
+                <p>Customers</p>
+            </div>
+            <div class="divider"></div>
+            <div class="stat-item text-center">
+                <h2>100%</h2>
+                <p>Service delivery</p>
+            </div>
+        </div>
+    </div>
 
             <!-- our best services second line-->
 
-
-            <div class="container12">
-                
-                <div class="feature-box">
-                    <div class="icon"><img src="images/clock.jpg" width="100%" alt="Photomount"></div>
-                    <h3>Clock Branding</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <section class="services-section">
+                <h1>Our Best <span>Services</span></h1>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <img src="images/14.jpg" alt="Photo Mounts">
+                        <h2>Photo Mounts</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/canvas.jpg" alt="Canvas Mounts">
+                        <h2>Canvas Mounts</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/mug.jpg" alt="Mug Branding">
+                        <h2>Mug Branding</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/bottle.jpg" alt="Bottle Branding">
+                        <h2>Bottle Branding</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/clock.jpg" alt="Clock Branding">
+                        <h2>Clock Branding</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/hoddie.jpg" alt="Hoodie Branding">
+                        <h2>Hoodie Branding</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/t-shirt.jpg" alt="T-shirt Branding">
+                        <h2>T-shirt Branding</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/wallet.jpg" alt="Wallet Branding">
+                        <h2>Wallet Branding</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/Photobook.jpg" alt="Photbook">
+                        <h2>Clock Branding</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/calendar1.png" alt="Calendar">
+                        <h2>Hoodie Branding</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/cap.jpeg" alt="cap Branding">
+                        <h2>T-shirt Branding</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/wrist watch.jpeg" alt="Wrist watch">
+                        <h2>Wallet Branding</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
                 </div>
-                <div class="feature-box">
-                    <div class="icon"><img src="images/hoddie.jpg" width="100%" alt="Canvas"></div>
-                    <h3>Hoddie Branding</h3>
-                    <p>Lorem ipsum dolor sit amet</p>
-                </div>
-                <div class="feature-box">
-                    <div class="icon"><img src="images/t-shirt.jpg" width="100%" alt="Mug"></div>
-                    <h3>T-shirt Branding</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="feature-box">
-                    <div class="icon"><img src="images/wallet.jpg" width="100%" alt="Bottle"></div>
-                    <h3>Wallet Branding</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-
-
-            <!-- our best services Third line-->
-
-
-            <div class="container12">
-                
-                <div class="feature-box">
-                    <div class="icon"><img src="images/Photobook.jpg" width="100%" alt="Photomount"></div>
-                    <h3>Photbook</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="feature-box">
-                    <div class="icon"><img src="images/calendar1.png" width="100%" alt="Canvas"></div>
-                    <h3>Calendar</h3>
-                    <p>Lorem ipsum dolor sit amet</p>
-                </div>
-                <div class="feature-box">
-                    <div class="icon"><img src="images/cap.jpeg" width="100%" alt="Mug"></div>
-                    <h3>cap Branding</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="feature-box">
-                    <div class="icon"><img src="images/wrist watch.jpeg" width="100%" alt="Bottle"></div>
-                    <h3>Wrist watch</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
+            </section>
+                    
             
             
         <!-- Are you looking for-->
@@ -454,5 +457,11 @@
         </div>
     </footer>
 
+
+    <!-- Add Bootstrap JS for collapse functionality -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 </html>
