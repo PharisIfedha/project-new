@@ -738,10 +738,11 @@ p {
 
 .get-started .icon {
     margin-bottom: 15px;
+    border: thin solid rgb(10, 10, 10);
 }
 
 .get-started .icon img {
-    width: 40px;
+    width: 100%;
 }
 
 .get-started h3 {
@@ -804,72 +805,124 @@ p {
 }
 
 /*notes*/
-.container13 {
-    
-    justify-content: space-between;
-    align-items: center;
-    padding: 3%;
-    gap: 20px;
-   
-}
+.sizing h2{
+   /* border: thick solid rgb(10, 10, 10);*/
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    padding-top: 20px;
 
-.box {
-    width: 100%;
+}
+.product-section {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background: #f8f6f6;
-    padding: 20px;
-    border-color: #000;
-    border-spacing: 20%;
-    border-radius: 20px;
+    justify-content: space-between;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #d8d5d5;
+    border-radius: 10px;
+    
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.text {
-    width: 50%;
+.product-info {
+    /*flex:auto;*/
+    padding-right: 20px;
 }
 
-.text h2 {
-    font-size: 1.5em;
+.product-info h1 {
+    font-size: 2rem;
+    color: #333;
     margin-bottom: 10px;
 }
 
-.text span {
-    font-weight: bold;
+.product-info p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+    font-style: italic;
 }
 
-.text p {
-    margin-bottom: 10px;
+.product-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #cc3232;
+    
 }
 
-.btn {
-    display: inline-block;
-    background-color: black;
-    color: white;
+.product-info .btn {
     padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
     text-decoration: none;
     border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-.image-placeholder {
-    width: 20%;
-    height: 300px;
-    background: #ddd;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.product-info .btn:hover {
+    background-color: #0056b3;
+}
+
+.product-image img {
+    max-width: 300px;
+    
     border-radius: 10px;
-    overflow: hidden;
+    border: thick solid rgb(10, 10, 10);
 }
 
-.image-placeholder::after {
-   
-    font-size: 1.2em;
-    color: #999;
-  
+/* Responsive Design */
+
+/* Medium Screens */
+@media (max-width: 768px) {
+    .product-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product-info {
+        padding-right: 0;
+    }
+
+    .product-image {
+        margin-top: 20px;
+    }
+
+    .product-info h1 {
+        font-size: 1.8rem;
+    }
+
+    .product-info p {
+        font-size: 0.95rem;
+    }
+
+    .product-info h2 {
+        font-size: 1.4rem;
+    }
+
+    .btn {
+        padding: 10px 15px;
+    }
 }
 
+/* Small Screens */
+@media (max-width: 576px) {
+    .product-info h1 {
+        font-size: 1.6rem;
+    }
+
+    .product-info p {
+        font-size: 0.9rem;
+    }
+
+    .product-info h2 {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        padding: 8px 12px;
+    }
+}
 /* Testimonials*/
 
 .testimonials {
@@ -1013,93 +1066,123 @@ p {
   }
 
   /* Footer*/
-  .links {
-    text-decoration: none;
-    
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.links:hover {
-    text-decoration: underline;
-}
-
-
-
-/* Footer Styles */
-.footer {
-    background-color: #f8f9fa;
-    padding: 40px 0;
-    border-top: 3px solid #d3d3d3;
-    color: #333;
+  .footer {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    border-top: 1px solid #ccc;
+    text-align: center;
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ccc;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: start;
+    justify-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Logo Section */
-.footer-logo {
-    flex: 1;
+.footer-logo img {
+    max-width: 150px;
 }
 
 .footer-logo h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    font-size: 1.5rem;
 }
 
-.logo-lines {
-    width: 150px;
-    height: 5px;
-    background-color: #333;
-    margin-bottom: 15px;
-    padding-left: 10%;
+.footer .social-icons {
+    margin-top: 10px;
 }
 
-.social-icons {
+.social-icons a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    color: #000;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #2d89ef;
+}
+
+.footer-links {
     display: flex;
-    gap: 10px;
+    justify-content: space-around;
+    width: 100%;
 }
 
-
-
-/* Section Styles */
-.footer-section {
-    flex: 1;
-}
-
-.footer-section h3 {
-    font-size: 18px;
+.footer-column h3 {
+    font-size: 1.2rem;
     margin-bottom: 15px;
-    padding-left: 15%;
 }
 
-.footer-section ul {
+.footer-column ul {
     list-style: none;
 }
 
-.footer-section ul li {
-    margin-bottom: 8px;
+.footer-column ul li {
+    margin-bottom: 10px;
 }
 
-/* Footer Bottom */
+.footer-column ul li a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #2d89ef;
+}
+
 .footer-bottom {
-    padding-top: 20px;
-    text-align: center;
-    color: #777;
-    font-size: 14px;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    font-size: 0.9rem;
 }
 
-.footer-bottom p {
-    margin: 0;
+/* Responsive Design */
+
+/* Medium screens */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-logo img {
+        max-width: 120px;
+    }
+
+    .footer-logo h2 {
+        font-size: 1.3rem;
+    }
 }
 
-.footer-bottom p b {
-    color: #333;
+/* Small screens */
+@media (max-width: 576px) {
+    .footer-logo img {
+        max-width: 100px;
+    }
+
+    .footer-logo h2 {
+        font-size: 1rem;
+    }
+
+    .footer-column h3 {
+        font-size: 1rem;
+    }
+
+    .footer-column ul li {
+        margin-bottom: 8px;
+    }
 }
 
 
