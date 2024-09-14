@@ -71,8 +71,8 @@
                 <!-- Book Now and Play Video Buttons -->
                 <div class="button-group">
                     <button class="btn btn-dark mr-2">Book Now</button>
-                    <div class="play-video-container">        
-                        <div class="play-icon">&#9658;</div>
+                    <div class="play-video-container">       
+                        <div class="play-icon" onclick="playVid()" >&#9658;</div>
                         <span>Play Video</span>
                     </div>
                 </div>
@@ -81,7 +81,10 @@
             <!-- Right Section (Image) -->
             <div class="col-lg-6 col-md-6 col-sm-12  image-section">
                 <div class="position-relative">
-                    <img src="images/canvas.jpg" alt="Canvas Front" class="img-fluid">
+                    <video id="myVideo" >
+                        <source src="images/mount.mp4" type="video/mp4">
+                       
+                      </video>
                     
                 </div>
             </div>
@@ -446,6 +449,15 @@
             <p>&copy; Copyright 2024 Pharitec. All rights reserved.</p>
         </div>
     </footer>
+
+    <script> 
+        let vid = document.getElementById("myVideo"); 
+        
+        function playVid() { 
+          vid.play(); 
+        } 
+        
+        </script>
 
     <!-- Add Bootstrap JS for collapse functionality -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
