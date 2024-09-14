@@ -295,6 +295,9 @@ header .auth a:hover {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+.cont{
+    padding-left: 20px;
+}
 
 .button-group{
     display: flex;
@@ -417,7 +420,7 @@ header .auth a:hover {
 .stats-box {
     background-color: #1a1a1a;
     padding: 20px;
-    border-radius: 50px;
+    /*border-radius: 50px;*/
     color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -482,6 +485,7 @@ header .auth a:hover {
     margin: 0 auto;
     padding-top: 30px;
     
+    
 }
 
 .state h2 {
@@ -490,6 +494,8 @@ header .auth a:hover {
     color: #333;
     margin-bottom: 20px;
     font-family: 'Times New Roman';
+    font-weight: bold;
+    text-align: center;
 }
 
 .state h2 span {
@@ -815,6 +821,8 @@ p {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
     padding-top: 20px;
+    font-weight: bold;
+    text-align: center;
 
 }
 .product-section {
@@ -1195,10 +1203,5 @@ p {
 
 
 
-   h2{
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 0px;
-  }
-  
+   
  
