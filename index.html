@@ -95,7 +95,7 @@
     <div class="container mt-5">
         <div class="stats-box d-flex justify-content-between align-items-center">
             <div class="stat-item text-center">
-                <h2>95%</h2>
+                <h2 id="counter">95%</h2>
                 <p>Satisfaction Rate</p>
             </div>
             <div class="divider"></div>
@@ -456,7 +456,22 @@
         function playVid() { 
           vid.play(); 
         } 
-        
+        // Get the counter display element
+let counterDisplay = document.getElementById('counter');
+
+// Initialize a counter variable
+let count = 0 ;
+
+// Create a function to update the counter
+function updateCounter() {
+    count++; // Increment the count
+    counterDisplay.textContent = count; // Display the updated count
+}
+
+// Set the counter to update every second (1000 ms)
+setInterval(updateCounter, 1000);
+
+
         </script>
 
     <!-- Add Bootstrap JS for collapse functionality -->
