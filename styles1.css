@@ -233,6 +233,7 @@ header .logo{
     display: flex;
 }
 
+
 nav ul {
     list-style: none;
     display: flex;
@@ -254,6 +255,14 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #007bff;
+}
+
+#navbarNav{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 0px;
 }
 
 .language a {

@@ -25,7 +25,7 @@
             </button>
         
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav  ">
+                <ul class="navbar-nav ">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home</a>
                     </li>
@@ -92,7 +92,7 @@
     </div>
 
     <!-- Customer review-->
-    <div class="container mt-5">
+    <div class="container m-5">
         <div class="stats-box d-flex justify-content-between align-items-center">
             <div class="stat-item text-center">
                 <span style="display: flex;"><h2 class="counter" data-target="95">0</h2>%</span>
@@ -487,7 +487,7 @@ counters.forEach(counter => {
 
     if (count < target) {
       counter.innerText = `${Math.ceil(count + increment)}`;
-      setTimeout(updateCounter, 10); // Adjust 10 to control speed
+      setTimeout(updateCounter, 100); // Adjust 10 to control speed
     } else {
       counter.innerText = target; // Ensure final value is exact
     }
