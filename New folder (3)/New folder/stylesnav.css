@@ -1,0 +1,79 @@
+/* Basic styling for navbar */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #575757;
+    color: white;
+}
+
+/* Responsive styling */
+
+/* Small screens (phones, <600px) */
+@media screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li {
+        display: block;
+        width: 100%;
+    }
+
+    .navbar li a {
+        text-align: left;
+        padding: 10px 20px;
+    }
+}
+
+/* Medium screens (tablets, 600px to 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .navbar li a {
+        padding: 12px 16px;
+    }
+}
+
+/* Large screens (desktops, >1024px) */
+@media screen and (min-width: 1025px) {
+    .navbar {
+        justify-content: flex-end;
+        padding-right: 50px;
+    }
+
+    .navbar li a {
+        padding: 14px 20px;
+    }
+}

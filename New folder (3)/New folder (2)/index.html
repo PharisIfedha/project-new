@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharitec Page</title>
+    <link rel="stylesheet" href="styles1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+  
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-top: 0%;">
+            <div class="logo">
+                <img src="images/pharis.png" class="pharis">
+                   <!--<h2 class="logo"> Pharitec</h2>-->
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse justify-content-center mx-auto" id="navbarNav">
+                <ul class="navbar-nav  ">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Photobooks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Canvases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Photomounts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Receipt Books</a>
+                    </li>
+                </ul>
+        
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link login-link" href="#">Log In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link signup-link btn btn-primary" style="background-color: black; color: aliceblue; border-color: black;" href="#">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container1 m-5">
+        <div class="row ">
+            <!-- Left Section (Text + Buttons) -->
+            <div class="col-lg-6 col-md-6 col-sm-12 text-section">
+                <h2 class="">Keeping Memories Alive</h2>
+                <p>We help you use your photos to tell the story they capture in an easy and fun way. We believe that memories captured today need to be retained, to be enjoyed, to be touched and felt. We believe everyone should #keepmemoriesalive! It is our job to give you exciting products to make this happen!</p>
+                
+                <!-- Email input and Sign up button -->
+                <form class="form-inline mb-3">
+                    <input type="email" class="form-control email-input mr-2" placeholder="Enter email">
+                    <button type="submit" class="btn btn-danger">Sign up</button>
+                </form>
+                
+                <!-- Book Now and Play Video Buttons -->
+                <div class="button-group">
+                    <button class="btn btn-dark mr-2">Book Now</button>
+                    <div class="play-video-container">       
+                        <div class="play-icon" onclick="playVid()" >&#9658;</div>
+                        <span>Play Video</span>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Right Section (Image) -->
+            <div class="col-lg-6 col-md-6 col-sm-12  image-section">
+                <div class="position-relative">
+                    <video id="myVideo" onclick="pauseVid()" >
+                     <source src="images/Photomounts part of our packages.mp4" type="video/mp4">
+                       
+                      </video>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Customer review-->
+    <div class="container mt-5">
+        <div class="stats-box d-flex justify-content-between align-items-center">
+            <div class="stat-item text-center">
+                <span style="display: flex;"><h2 class="counter" data-target="95">0</h2>%</span>
+                <p>Satisfaction Rate</p>
+            </div>
+            <div class="divider"></div>
+            <div class="stat-item text-center">
+                <span style="display: flex;"><h2 class="counter" data-target="200">0</h2></span>
+                <p>Employee</p>
+            </div>
+            <div class="divider"></div>
+            <div class="stat-item text-center">
+                <span style="display: flex;"><h2 class="counter" data-target="3000">0</h2>+</span>
+                <p>Customers</p>
+            </div>
+            <div class="divider"></div>
+            <div class="stat-item text-center">
+                <span style="display: flex;"><h2 class="counter" data-target="100">0</h2>%</span>
+                <p>Service delivery</p>
+            </div>
+        </div>
+    </div>
+
+            <!-- our best services second line-->
+
+            <section class="services-section">
+                <h1 style=" font-weight: bold; text-align: center; margin-bottom: 0px;">Our Best <span>Services</span></h1>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <img src="images/14.jpg" alt="Photo Mounts">
+                        <h2>Photo Mounts</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/canvas.jpg" alt="Canvas Mounts">
+                        <h2>Canvas Mounts</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/mug.jpg" alt="Mug Branding">
+                        <h2>Mug Branding</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/bottle.jpg" alt="Bottle Branding">
+                        <h2>Bottle Branding</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/clock.jpg" alt="Clock Branding">
+                        <h2>Clock Branding</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/hoddie.jpg" alt="Hoodie Branding">
+                        <h2>Hoodie Branding</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/t-shirt.jpg" alt="T-shirt Branding">
+                        <h2>T-shirt Branding</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/wallet.jpg" alt="Wallet Branding">
+                        <h2>Wallet Branding</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/Photobook.jpg" alt="Photbook">
+                        <h2>Photobook</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/calendar1.png" alt="Calendar">
+                        <h2>Calendar</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/cap.jpeg" alt="cap Branding">
+                        <h2>Cap Branding</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/wrist watch.jpeg" alt="Wrist watch">
+                        <h2>Wrist watch</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </section>
+                    
+            
+            
+        <!-- Are you looking for-->
+
+            <div class="state1">
+                <h3>Are you looking for:</h3>
+            </div>
+
+            <div class="row  m-3">
+                <div class="col-sm-3 mb-3 mb-sm-0">
+                    <div class="card">
+                        <div class="card-body">
+                        <h5 class="card-title">Photomount</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Photomount</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                        <h5 class="card-title">Canvas</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Canvas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Photobook</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Photobook</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Calendar</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Calendar</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Our Faculty-->
+
+            <div class="state">
+                <h2 >Our <span>Faculty</span></h2>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4 m-3">
+                <div class="col">
+                <div class="card h-100">
+                    <img src="images/Manager.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Pharis Ifedha </h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                    <H6 class="text-body-secondary text-center">Branding Manager</h6>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                <div class="card h-100">
+                    <img src="images/Graphics Designer.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Daniel McDonald</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                    <div class="card-footer">
+                        <H6 class="text-body-secondary text-center">Graphics Designer</h6>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                <div class="card h-100">
+                    <img src="images/delivery.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Moses McCain</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    </div>
+                    <div class="card-footer">
+                        <H6 class="text-body-secondary text-center">Delivery Guy</h6>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            
+            <!--How to oder-->
+            <section class="get-started">
+                <h2>GET STARTED</h2>
+                <div class="services">
+                    <div class="service-box">
+                        <div class="icon">
+                            <img src="images/download.png" alt="Download Free Software">
+                        </div>
+                        <h3>DOWNLOAD FREE SOFTWARE</h3>
+                        <p>Use our <a href="#">Free Mac</a> or <a href="#">Windows</a> compatible software to make your book today.</p>
+                    </div>
+        
+                    <div class="service-box">
+                        <div class="icon">
+                            <img src="images/shop.jpeg" alt="Shop Now">
+                        </div>
+                        <h3>SHOP NOW</h3>
+                        <p>Buy now and <a href="#">upload</a> your files online for us to print and bind.</p>
+                    </div>
+        
+                    <div class="service-box">
+                        <div class="icon">
+                            <img src="images/hire.png" alt="Hire an Expert">
+                        </div>
+                        <h3>HIRE AN EXPERT</h3>
+                        <p>Use one of our <a href="#">expert designers</a> to do it for you.</p>
+                    </div>
+
+                    <div class="service-box">
+                        <div class="icon">
+                            <img src="images/print.png" alt="What to Print">
+                        </div>
+                        <h3>WHAT TO PRINT</h3>
+                        <p>Use our <a href="#">Decision Chart</a> to guide you through the printing process.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--notes-->
+            <div class="sizing">
+                <h2>ODERING</h2>
+                <section class="product-section">
+                    <div class="product-info">
+                        <h1>Hexagon Shaped Board Mounts</h1>
+                        <p>Hexagon-shaped board mounts provide a unique and visually appealing way to display information, designs, or artwork. Their geometric shape adds a modern touch, making them ideal for creative presentations, wall displays, or decorative installations. Durable and stylish, they stand out as an innovative alternative to traditional rectangular mounts.</p>
+                        <h2>Each piece Ksh 500</h2>
+                        <a href="#" class="btn">Order Now</a>
+                    </div>
+                    <div class="product-image">
+                        <img src="images/hexagon.jpg" alt="Hexagon Shaped Board Mounts">
+                    </div>
+                </section>
+
+                <section class="product-section">
+                    
+                    <div class="product-info">
+                        <h1>Wrist Watch Branding</h1>
+                        <p>Elevate your style with our sleek and sophisticated wristwatches, where precision meets timeless design. Crafted for those who value both elegance and performance, our watches are the perfect blend of luxury and functionality. Make every moment count with a brand you can trust.</p>
+                        <h2>Ksh 1500</h2>
+                        <a href="#" class="btn">Order Now</a>
+                    </div>
+                    <div class="product-image">
+                        <img src="images/wrist watch.jpeg" alt="Hexagon Shaped Board Mounts">
+                    </div>
+                </section>
+
+                <section class="product-section">
+                    <div class="product-info">
+                        <h1>Photo Mounts</h1>
+                        <p>Display your cherished memories with elegance using our premium photo mounts. Designed to enhance and protect your photos, they offer the perfect blend of style and durability, ensuring your moments stand out beautifully.</p>
+                        <h2>A5 @ Ksh 250/-
+                            A4 @ Ksh 400/-
+                            A3 @ Ksh 750/-
+                            A2 @ Ksh 1400/-
+                            A1 @ Ksh 3000/-</h2>
+                        <a href="#" class="btn">Order Now</a>
+                    </div>
+                    <div class="product-image">
+                        <img src="images/15.jpg" alt="Hexagon Shaped Board Mounts">
+                    </div>
+                </section>
+            </div>
+
+            <!--Testimonials-->
+            <div class="testimonials">
+                <h2>What People Say <span>About Us</span></h2>
+                <div class="testimonials-container">
+                    <div class="testimonial-card">
+                        <div class="image-placeholder0"> <img src="images/pharis.jpg" class="card-img-top" alt="..."> </div>
+                        <p class="name">Robert Jallan'go  (CEO Perfect pics)</p>
+                        <p class="review">"Pharitec has transformed our business with its innovative solutions. The support and expertise 
+                            they provide are unmatched!"</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="image-placeholder0"> <img src="images/phil.jpg" class="card-img-top" alt="..."> </div>
+                        <p class="name">Philip Knight (Manager Safaricom)</p>
+                        <p class="review">"Working with Pharitec has been a game-changer for us. Their commitment to quality and customer 
+                            satisfaction sets them apart."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--want to register and become a member-->
+
+            <div class="subscribe-section">
+                <div class="subscribe-container">
+                  <h2>JOIN AND SAVE 20%</h2>
+                  <p>Join Pharitec's newsletter for exclusive offers and 20% off your first order!</p>
+                  
+                  <form class="subscribe-form">
+                    <input type="text" placeholder="Name*" required>
+                    <input type="email" placeholder="E-Mail*" required>
+                    <input type="text" placeholder="Phone No*" required>
+                    <button type="submit">Subscribe</button>
+                  </form>
+                </div>
+              </div>   
+    </div>
+
+    <!--Footer-->
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/pharis.png" alt="Pharitec Logo" />
+                <h2>Pharitec Limited</h2>
+                <div class="social-icons">
+                    <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin"></i>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Delivery Support</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Features</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Database</a></li>
+                        <li><a href="#">Doctors</a></li>
+                        <li><a href="#">Facility</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>User</h3>
+                    <ul>
+                        <li><a href="#">User Login</a></li>
+                        <li><a href="#">User Register</a></li>
+                        <li><a href="#">Forgot Password?</a></li>
+                        <li><a href="#">Social Profiles</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Copyright 2024 Pharitec. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script> 
+        let vid = document.getElementById("myVideo"); 
+        
+        function playVid() { 
+          vid.play(); 
+        }
+        function pauseVid() { 
+        vid.pause(); 
+        } 
+
+        // Get the counter display element
+//let counterDisplay = document.getElementById('counter');
+
+// Initialize a counter variable
+//let count = 0 ;
+
+// Create a function to update the counter
+//function updateCounter() {
+    //count++; // Increment the count
+    //count++; // Increment the count
+    //counterDisplay.textContent = count; // Display the updated count
+//}
+
+// Set the counter to update every second (1000 ms)
+//setInterval(updateCounter, 1000);
+
+const counters = document.querySelectorAll('.counter');
+
+counters.forEach(counter => {
+  counter.innerText = '0';
+  
+  const updateCounter = () => {
+    const target = +counter.getAttribute('data-target');
+    const count = +counter.innerText;
+
+    // Increment logic: 
+    const increment = target / 200; // Adjust 200 to control speed
+
+    if (count < target) {
+      counter.innerText = `${Math.ceil(count + increment)}`;
+      setTimeout(updateCounter, 100); // Adjust 10 to control speed
+    } else {
+      counter.innerText = target; // Ensure final value is exact
+    }
+  };
+
+  updateCounter();
+});
+
+        </script>
+
+    <!-- Add Bootstrap JS for collapse functionality -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
